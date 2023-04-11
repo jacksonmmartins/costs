@@ -1513,6 +1513,28 @@
       "cost": 0,
       "services": [],
       "id": 192
+    },
+    {
+      "name": "teste",
+      "budget": "6253",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 193
+    },
+    {
+      "name": "a",
+      "budget": "2344",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 194
     }
   ],
   "categories": [
