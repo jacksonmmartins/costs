@@ -1,4 +1,5 @@
 import Message from '../layout/Message'
+import Loading from '../layout/Loading'
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import styles from './Projects.module.css'
@@ -10,6 +11,7 @@ import ProjectCard from '../project/ProjectCard'
 
 function Projects(){
     const [projects, setProjects] = useState([])
+    const [removeLoading, setRemoveLoading] = useState(false)
 
     const location = useLocation()
     let message = ''
@@ -28,10 +30,24 @@ function Projects(){
             .then((resp)=> resp.json())
             .then((data)=>{
                 setProjects(data)
+                setRemoveLoading(true)
                 console.log(data)
             })
             .catch((err)=> console.log(err))
     }, [])
+
+    function removeProject(id) {
+        fetch(`http://localhost:5000/projects/${id}`,{
+        method: 'DELETE',
+        headers : {
+            'Content-Type': 'application/json'
+        },
+    }).then(resp => resp.json())
+    .then(data => {
+        setProjects(projects.filter((project)=> project.id !== id))
+        // message
+    })
+    }
 
     return(
         <div className={styles.project_container}>
@@ -49,9 +65,11 @@ function Projects(){
                                 budget={project.budget}
                                 category={project?.category?.name}
                                 key={project.id}
+                                handleRemove={removeProject}
                                 />
                         ))
                     }
+                    {!removeLoading && <Loading />}
                 </Container>
         </div>
     )
