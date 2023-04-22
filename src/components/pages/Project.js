@@ -32,7 +32,7 @@ function Project() {
         <>
             {project.name ? (
                 <div className={styles.project_details}>
-                    <Container customClass='colum'>
+                    <Container customClass="column">
                         <div className={styles.details_container}>
                             <h1>
                                 Projeto: {project.name}
@@ -42,7 +42,7 @@ function Project() {
                             </button>
                             {!showProjectForm ? (
                                  
-                                    <div className={styles.project_info}>
+                                    <div className={styles.form}>
                                         <p>
                                             <span>Categoria:</span> {project.category.name}
                                         </p>
@@ -54,7 +54,7 @@ function Project() {
                                         </p>
                                     </div>
                                 ) : (
-                                    <div className={styles.project_info}>
+                                    <div className={styles.form}>
                                         <p>form</p>
                                     </div>
                                 )}
