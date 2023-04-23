@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "Projeto teste",
-      "budget": "5000",
+      "name": "Troca de sensores",
+      "budget": "8000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,11 +12,11 @@
       "id": 1
     },
     {
-      "name": "Rollout de maquinas",
-      "budget": "6000",
+      "name": "Rollout de maquinas v2",
+      "budget": "12000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
