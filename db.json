@@ -18,8 +18,27 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 450,
+      "services": [
+        {
+          "name": "Pagina home",
+          "cost": "150",
+          "description": "refazer",
+          "id": "280999dc-6d27-451d-a88f-d0ba36df2014"
+        },
+        {
+          "name": "Pagina home",
+          "cost": "150",
+          "description": "refazer",
+          "id": "280999dc-6d27-451d-a88f-d0ba36df2014"
+        },
+        {
+          "name": "Pagina home",
+          "cost": "150",
+          "description": "refazer",
+          "id": "280999dc-6d27-451d-a88f-d0ba36df2014"
+        }
+      ],
       "id": 3
     }
   ],
