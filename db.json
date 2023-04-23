@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "name": "Troca de sensores",
-      "budget": "8000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
       "name": "Rollout de maquinas v2",
       "budget": "12000",
       "category": {
