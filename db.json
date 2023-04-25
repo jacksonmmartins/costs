@@ -18,7 +18,7 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 450,
+      "cost": 750,
       "services": [
         {
           "name": "Pagina home",
@@ -37,6 +37,18 @@
           "cost": "150",
           "description": "refazer",
           "id": "280999dc-6d27-451d-a88f-d0ba36df2014"
+        },
+        {
+          "name": "teste_form",
+          "cost": "100",
+          "description": "Teste",
+          "id": "25d45ba1-2980-4a90-a09d-88f8873d7a37"
+        },
+        {
+          "name": "teste_form1",
+          "cost": "200",
+          "description": "teste3",
+          "id": "45cf5ea4-f284-4427-99a1-9a03ffdd9613"
         }
       ],
       "id": 3
